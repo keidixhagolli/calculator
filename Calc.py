@@ -1,4 +1,12 @@
 firstnumber = input("Enter first number: ")
 action = input("Enter desired operation: ")
 secondnumber = input("Enter second number: ")
-print(firstnumber,action,secondnumber,"=",(firstnumber)(action)(secondnumber))
+if action == "+":
+    result = int(firstnumber) + int(secondnumber)
+elif action == "-":
+    result = int(firstnumber) - int(secondnumber)
+elif action == "/":
+    result = int(firstnumber) / int(secondnumber)
+elif action == "*":
+    result = int(firstnumber) * int(secondnumber)
+print(firstnumber,action,secondnumber,"=",result)
